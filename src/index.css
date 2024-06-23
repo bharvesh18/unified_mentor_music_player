@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.control-opt{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.progress-bar {
+  height: 5px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.progress {
+  -webkit-appearance: none; /* Override default appearance */
+  appearance: none;
+  width: 100%; /* Fill the entire progress bar container */
+  height: 100%; /* Match the height of the container */
+  background: linear-gradient(to right, black 50%, grey 50%); /* Color for the unplayed portion */
+  border-radius: 2px;
+  width: 316px;
+}
+
+.progress::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default thumb appearance */
+  appearance: none;
+  border-radius: 50%;
+  width: 15px; /* Width of the thumb handle */
+  height: 15px; /* Height of the thumb handle */
+  background-color: black; /* Color of the thumb handle */
+  border-radius: 50%; /* Create a circular thumb handle */
+  cursor: pointer; /* Indicate draggable cursor on hover */
+}
+
+.progress::-webkit-slider-track {
+  -webkit-appearance: none; /* Override default track appearance */
+  appearance: none;
+  background: none; /* Remove default track background */
+}
+.main{
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player-section{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.play-list{
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.song-card {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(to right, #2e2e2e, #1e1e1e);
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.song-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.song-card img{
+  height: 100px;
+  width: 100px;
+}
+.song-detail{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 40px;
+  cursor: pointer;
+}
